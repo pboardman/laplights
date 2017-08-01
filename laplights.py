@@ -36,8 +36,8 @@ class Lights:
         light_info = {}
         if model == "t460":
             light_info["screen_backlight"] = "/sys/class/backlight/intel_backlight/"
-            light_info["kb_backlight"] = "/sys/class/leds/tpacpi\:\:kbd_backlight/"
-            light_info["pwr_led"] = "/sys/class/leds/tpacpi\:\:power/"
+            light_info["kb_backlight"] = "/sys/class/leds/tpacpi::kbd_backlight/"
+            light_info["pwr_led"] = "/sys/class/leds/tpacpi::power/"
         else:
             return None
 
